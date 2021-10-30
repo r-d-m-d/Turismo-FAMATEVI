@@ -1,0 +1,11 @@
+Tipo,Nombre Pack,Beneficio,Atracciones,,,
+Porcentual,Pack aventura,0.2,Bosque Negro,Mordor,,
+Porcentual,Pack aventura plus,0.1,Bosque Negro,Mordor,Lothlorien,
+Absoluta,Pack degustacion gold,46,Lothlorien,Erebor,La comarca,
+Absoluta,Pack degustacion,36,Lothlorien,La comarca,,
+Combo,Combo aventura,Minas Tirith,Abismo de Helm,Gratis,Erebor,
+Combo,Combo aventura extrema,Minas Tirith,Lothlorien,Gratis,Bosque Negro,Erebor
+Porcentual,Pack Paz mental,0.1,El lago,El gallinero,,
+Absoluta,Pack Terror,100,La casa de los sustos,La mansion del duke de alba,,
+Combo,Combo Terror plus,La casa de los sustos,Mordor,Gratis,La mansion del duke de alba,
+Porcentual,Pack Descanso,0.2,Erebor,El lago,Moria,La Comarca
