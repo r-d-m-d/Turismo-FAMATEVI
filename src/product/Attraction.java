@@ -94,4 +94,9 @@ public class Attraction implements Offer, Comparable<Attraction> {
 		return Double.compare(this.getVisitCost(), otra.getVisitCost()) == 0 ? Double.compare(this.timeRequired, otra.getTimeRequired()) : Double.compare(this.getVisitCost(), otra.getVisitCost());
 	}
 
+	@Override
+	public boolean isAccepted(List<Attraction> acceptedAttractions) {
+		return acceptedAttractions.contains(this);
+	}
+
 }

@@ -37,17 +37,6 @@ public class TourSystem {
 		this.currentPacks.add(promotion);
 	}
 
-	public boolean isAccepted(Promotion promotion, List<Attraction> acceptedAttractions) {
-		return promotion.hasAny(acceptedAttractions);
-	}
-
-	public boolean isAccepted(Offer offer, List<Attraction> acceptedAttractions) {
-		if (!(offer instanceof Attraction))
-			return isAccepted((Promotion) offer, acceptedAttractions);
-		else
-			return acceptedAttractions.contains((Attraction) offer);
-	}
-
 	public void offerAccordingUser(User user) {
 
 		List<Attraction> acceptedAttractions = new ArrayList<Attraction>();
@@ -64,7 +53,7 @@ public class TourSystem {
 		System.out.println("*************************************************************");
 		
 		for (Offer offer : offers) {
-			if (!isAccepted(offer, acceptedAttractions)
+			if (!offer.isAccepted(acceptedAttractions)
 					&& user.isOffertViable((int)offer.getVisitCost(),offer.getTimeRequired())
 					&& offer.checkVacancy()) {
 

@@ -45,6 +45,7 @@ public class AxBPromotion extends Promotion {
 	
 	@Override
 	public boolean hasAny(List<Attraction> attractionList) {
+		/*Para Hacer: usar while en lugar de for */
 		for(Attraction a: this.extra) {
 			if(attractionList.contains(a))
 				return true;
@@ -76,5 +77,10 @@ public class AxBPromotion extends Promotion {
 		}
 		return super.checkVacancy();
 	}
+	@Override
+	public boolean isAccepted(List<Attraction> acceptedAttractions) {
+		return this.hasAny(acceptedAttractions);
+	}
+
 
 }

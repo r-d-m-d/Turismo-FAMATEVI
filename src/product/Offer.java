@@ -19,7 +19,7 @@ public interface Offer  {
 	
 	public void printOffer();
 	
-	/*public boolean itsPromotion();*/
+	public boolean isAccepted(List<Attraction> acceptedAttractions);
 	
 	public void appendTo(List<Attraction> acceptedAttractions);
 

@@ -137,6 +137,10 @@ public abstract class Promotion implements Offer, Comparable<Promotion> {
 		
 	}
 	@Override
+	public boolean isAccepted(List<Attraction> acceptedAttractions) {
+		return this.hasAny(acceptedAttractions);
+	}
+	@Override
 	public int hashCode() {
 		return Objects.hash(includedAttractions, name);
 	}
